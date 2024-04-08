@@ -13,3 +13,33 @@ Enter the fift price: 7.99
 Your subtotal is $63.71 and your taxes total $7.65 for a total of $71.36
 
 """
+import math
+
+
+print("\n\n\n\nEnter the first price")
+price1 = input ()
+price1 = float (price1)
+
+
+print("\nEnter the second price")
+price2 = input ()
+price2 = float (price2)
+
+print("\nEnter the third price")
+price3 = input ()
+price3 = float (price3)
+
+
+print("\nEnter the fourth price")
+price4 = input ()
+price4 = float (price4)
+
+
+t = (price1+price2+price3+price4)*0.12
+t = float (t)
+
+tt = (price1+price2+price3+price4)/0.12
+tt = float (tt)
+
+
+print(f"Your subtotal is $63.71 and your taxes total {tt} for a total of ${t}")

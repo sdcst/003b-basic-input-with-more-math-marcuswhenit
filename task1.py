@@ -14,3 +14,23 @@ Enter the # of days in the month: 30
 You earned $0.2 interest. 
 (2 points) 
 """
+import math
+
+
+print("\n\n     Enter principal:")
+p = input()
+p = float(p)
+
+print("\n     Enter rate:")
+r = input()
+r = float(r)
+r = r/100
+
+print("\n     Enter days in the month:")
+d = input()
+d = float(d)
+
+i = (p*r*d)/365
+
+print(f"you earned ${i} of interest!")
+
