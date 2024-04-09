@@ -34,12 +34,16 @@ print("\nEnter the fourth price")
 price4 = input ()
 price4 = float (price4)
 
+p = (price1+price2+price3+price4)
 
-t = (price1+price2+price3+price4)*0.12
+t = p*0.12
 t = float (t)
+round(t,2)
 
-tt = (price1+price2+price3+price4)/0.12
+
+tt = t + p
 tt = float (tt)
+round(tt,2)
 
 
-print(f"Your subtotal is $63.71 and your taxes total {tt} for a total of ${t}")
+print(f"Your subtotal is {p} and your taxes total {t} for a total of ${tt}")
